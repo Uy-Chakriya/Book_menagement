@@ -1,7 +1,8 @@
+import LIbrary_steem.Book;//public class LIbrary_steem.Main {
+import LIbrary_steem.Library;
+import LIbrary_steem.Member;
 
-
-//public class Main {
-    public static void main(String[] args) {
+public static void main(String[] args) {
         System.out.println("Welcome to the library Management System");
         Library library = new Library();
 
@@ -10,8 +11,8 @@
         library.addBook(book1);
         library.addBook(book2);
 
-        Member member1 = new Member(1,"Alice");
-        Member member2 = new Member(2,"Bob");
+        Member member1 = new LIbrary_steem.Member(1,"Alice");
+        LIbrary_steem.Member member2 = new LIbrary_steem.Member(2,"Bob");
         library.registerMember(member1);
         library.registerMember(member2);
 
