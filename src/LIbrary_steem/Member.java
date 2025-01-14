@@ -1,3 +1,5 @@
+package LIbrary_steem;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,7 +31,7 @@ public class Member {
             borrowedBooks.add(book);
             book.borrowBook();
         } else {
-            System.out.println("Book is not available.");
+            System.out.println("LIbrary_steem.Book is not available.");
         }
     }
 
@@ -43,7 +45,7 @@ public class Member {
     }
 
     public void getDetails() {
-        System.out.println("Member ID: " + id);
+        System.out.println("LIbrary_steem.Member ID: " + id);
         System.out.println("Name: " + name);
         System.out.println("Borrowed Books: " + borrowedBooks);
         for (Book book : borrowedBooks) {

@@ -1,3 +1,5 @@
+package LIbrary_steem;
+
 //import java.util.List;
 class Book {
     private final int id;
@@ -27,20 +29,20 @@ class Book {
     public void borrowBook() {
         if (isAvailable) {
             isAvailable = false;
-            System.out.println("Book borrowed: " + title);
+            System.out.println("LIbrary_steem.Book borrowed: " + title);
         } else {
-            System.out.println("Book is already borrowed.");
+            System.out.println("LIbrary_steem.Book is already borrowed.");
         }
     }
 
     public void returnBook() {
         isAvailable = true;
-        System.out.println("Book returned: " + title);
+        System.out.println("LIbrary_steem.Book returned: " + title);
     }
 
     public void getDetails() {
-        System.out.println("Book ID: " + id + ", Title: " + title + ", Author: " + author + ", Available: " + isAvailable);
-        System.out.println("Member ID: " + id);
+        System.out.println("LIbrary_steem.Book ID: " + id + ", Title: " + title + ", Author: " + author + ", Available: " + isAvailable);
+        System.out.println("LIbrary_steem.Member ID: " + id);
         System.out.println("Title: " + title);
         System.out.println("Authour: " + author);
         System.out.println("Available Books: " + isAvailable);
