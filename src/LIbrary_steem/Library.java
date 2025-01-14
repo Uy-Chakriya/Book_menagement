@@ -1,3 +1,5 @@
+package LIbrary_steem;
+
 import java.util.ArrayList;
 import java.util.List;
 public class Library {
@@ -11,12 +13,12 @@ public class Library {
 
     public void addBook(Book book) {
         books.add(book);
-        System.out.println("Book added: " + book.getTitle());
+        System.out.println("LIbrary_steem.Book added: " + book.getTitle());
     }
 
     public void registerMember(Member member) {
         members.add(member);
-        System.out.println("Member registered: " + member.getName());
+        System.out.println("LIbrary_steem.Member registered: " + member.getName());
     }
 
     public Book findBookById(int id) {
@@ -34,13 +36,13 @@ public class Library {
     }
 
     public void displayBooks() {
-        System.out.println("Books in Library:");
+        System.out.println("Books in LIbrary_steem.Library:");
         for (Book book : books) {
             book.getDetails();
         }
     }
     public void displayMembers() {
-        System.out.println("Library Members:");
+        System.out.println("LIbrary_steem.Library Members:");
         for (Member member : members) {
             member.getDetails();
         }
